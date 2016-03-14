@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Debug</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <input type="button" id="btnDemo" value="Click Me" />
+
+    <script>
+        console.log("Debug là quá trình tìm lỗi");
+        var name = "Debugging JavaScript";
+        debugger;
+        var button = document.getElementById("btnDemo");
+        name = "JavaScript";
+        debugger;
+        button.onclick = function() {
+            alert("Đây là hàm xử lý sự kiện");
+        };
+    </script>
+</body>
+
+</html>

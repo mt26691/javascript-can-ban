@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>onload</h1>
+    <p>onload là hàm sẽ chạy ngay sau khi một đối tượng nào đó được tải xong</p>
+    <p>onload thường được sử dụng phổ biến với thẻ body hoặc đối tượng document</p>
+    <img src="javascript.png" id="imgDemo" />
+    <script>
+        var img = document.getElementById("imgDemo");
+        img.onload = function() {
+            alert("Ảnh đã được tải xong");
+        };
+    </script>
+</body>
+
+</html>

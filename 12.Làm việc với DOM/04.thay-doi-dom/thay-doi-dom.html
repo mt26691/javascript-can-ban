@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <a id="anchorTest" href="https://google.com">Anchor Test</a>
+
+    <script>
+        var anchor = document.getElementById("anchorTest");
+        console.log("href trước khi thay đổi: " + anchor.getAttribute("href"));
+        anchor.setAttribute("href", "http://hocdai.com");
+        anchor.innerHTML = "http://hocdai.com";
+        //Xem thuộc tính href sau khi đã thay đổi
+        console.log("href sau khi thay đổi: " + anchor.getAttribute("href"));
+    </script>
+</body>
+
+</html>

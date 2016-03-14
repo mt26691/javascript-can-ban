@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bài Tập</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <main>
+        <h1>Đây là nội dung trang web</h1>
+        <p>JavaScript làm cho trang web dễ tương tác hơn</p>
+        <p>JavaScript có thể lấy ra và làm việc được với mọi thành phần HTML trên trang</p>
+        <input type="button" value="In" id="btnPrint" />
+    </main>
+    <script>
+        var btnPrint = document.getElementById("btnPrint");
+        btnPrint.onclick = function() {
+            window.print();
+        };
+    </script>
+</body>
+
+</html>

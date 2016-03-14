@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div>
+        <img src="ngokhong.jpg" id="imgDemo" />
+    </div>
+    <div>
+        <input type="button" id="btnShow" value="Hiện Ảnh" />
+        <input type="button" id="btnHide" value="Ẩn Ảnh" />
+    </div>
+    <script>
+        //Hàm xử lý sự kiện hiện ảnh, tham số truyền vào là là đối tượng ảnh cần hiện
+        function showPicture(img) {
+            //hiện ảnh
+            img.style.visibility = "visible";
+        }
+         //Hàm xử lý sự kiện ẩṇ ảnh, tham số truyền vào là là đối tượng ảnh cần ẩn
+        function hidePicture() {
+            //ẩn ảnh
+            img.style.visibility = "hidden";
+        }
+
+        var img = document.getElementById("imgDemo");
+        var btnShow = document.getElementById("btnShow");
+        var btnHide = document.getElementById("btnHide");
+        btnShow.onclick = function() {
+            showPicture(img);
+        }
+        btnHide.onclick = function(img) {
+            hidePicture(img);
+        }
+    </script>
+</body>
+
+</html>

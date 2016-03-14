@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loop</title>
+</head>
+
+<body>
+
+    <h3>continue dùng để bỏ qua bước lặp (iteration) hiện tại để tiếp tục sang bước lặp tiếu theo.</h3>
+
+    <script>
+        for (var i = 1; i <= 100; i++) {
+            //nếu i % 2 == 0, ta thực hiện bước lặp tiếp theo
+            if (i % 2 === 0) {
+                continue;
+            }
+            console.log(i);
+        }
+    </script>
+</body>
+
+</html>

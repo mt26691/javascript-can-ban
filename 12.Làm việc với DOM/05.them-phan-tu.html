@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <ul id="testUL">
+        <li>Phần tử 1</li>
+        <li>Phần tử 2</li>
+        <li>Phần tử 3</li>
+    </ul>
+
+    <script>
+        //tạo phần tử li
+        var myNewLi = document.createElement("li");
+        //tạo text node
+        var myText = document.createTextNode("Phần tử thứ 4");
+        //thêm text node vào phần tử li vừa được tạo
+        myNewLi.appendChild(myText);
+        //lấy ra phần tử ul cần thêm li
+        var myUL = document.getElementById("testUL");
+        //thêm phần tử li vào ul vừa được lấy ra
+        myUL.appendChild(myNewLi);
+    </script>
+</body>
+
+</html>

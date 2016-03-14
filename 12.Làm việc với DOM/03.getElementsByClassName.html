@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <p class="Test">Bạn có thể lấy ra bất kỳ phần tử nào trên trang HTML bằng JavaScript. <b>Node con b được in đậm</b>
+    </p>
+    <ul class="Test">
+        <li>Phần tử 1</li>
+        <li>Phần tử 2</li>
+        <li>Phần tử 3</li>
+    </ul>
+    <script>
+        var listTest = document.getElementsByClassName("Test");
+
+        for (var i = 0; i < listTest.length; i++) {
+            console.log("Tên Node: " + listTest[i].nodeName);
+            console.log("Nội dung Node: " + listTest[i].innerHTML);
+            //Thay đổi màu chữ và nền
+            listTest[i].style.color = "white";
+            listTest[i].style.backgroundColor = "blue";
+            console.log("-----------------------------------------------------");
+        }
+    </script>
+</body>
+
+</html>

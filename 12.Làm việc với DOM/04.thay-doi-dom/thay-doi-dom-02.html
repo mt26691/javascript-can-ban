@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <p class="test">JavaScript is awesome</p>
+    <a href="https://google.com" class="test">JavaScript can do anything on HTML page</a>
+    <script>
+        var listTest = document.getElementsByClassName("test");
+        for (var i = 0; i < listTest.length; i++) {
+            listTest[i].style.background = "green";
+            listTest[i].style.color =  "white";
+            listTest[i].style.fontSize = "30px";
+        }
+    </script>
+</body>
+
+</html>

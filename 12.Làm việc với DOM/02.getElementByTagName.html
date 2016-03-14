@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <p>Bạn có thể lấy ra bất kỳ phần tử nào trên trang HTML bằng JavaScript.</p>
+    <p>Đây là dòng thứ hai. <b>Node con b được in đậm</b>
+    </p>
+    <script>
+        var listP = document.getElementsByTagName("p");
+
+        for (var i = 0; i < listP.length; i++) {
+            console.log("Tên Node: " + listP[i].nodeName);
+            console.log("Loại Node: " + listP[i].nodeType);
+            console.log("Nội dung Node: " + listP[i].innerHTML);
+            console.log("Số phần tử con trong Node: " + listP[i].childElementCount);
+            console.log("-----------------------------------------------------");
+        }
+    </script>
+</body>
+
+</html>

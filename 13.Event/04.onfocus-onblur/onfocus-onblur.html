@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form>
+        Tên:
+        <input type="text" id="txtDemo" value="Nhập vào tên" />
+    </form>
+    <script>
+        var txtDemo = document.getElementById("txtDemo");
+        txtDemo.onfocus = function() {
+            var textBoxValue = txtDemo.value;
+            if (textBoxValue === "Nhập vào tên") {
+                txtDemo.value = "";
+            }
+        };
+        txtDemo.onblur = function() {
+            var textBoxValue = txtDemo.value;
+            if (textBoxValue === "") {
+                txtDemo.value = "Nhập vào tên";
+            }
+
+        };
+    </script>
+</body>
+
+</html>

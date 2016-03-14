@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bài Tập</title>
+    <meta charset="utf-8" />
+    <style>
+        #resultContainer {
+            color: blue;
+            font-size: 14px;
+        }
+        #errorContainer {
+            color: red;
+            font-sze: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            Số A:
+            <input type="number" id="txtNumberA" />
+        </div>
+        <div>
+            Số B:
+            <input type="number" id="txtNumberB" />
+        </div>
+        <div>
+            <input type="button" id="btnMultiply" value="Nhân" />
+            <input type="button" id="btnDivide" value="Chia" />
+        </div>
+    </form>
+    <div id="resultContainer">
+
+    </div>
+    <div id="errorContainer">
+    </div>
+    <script>
+        //nút nhân và chia
+        var btnMultiply = document.getElementById("btnMultiply");
+        var btnDivide = document.getElementById("btnDivide");
+         //số A và B
+        var txtNumberA = document.getElementById("txtNumberA");
+        var txtNumberB = document.getElementById("txtNumberB");
+         //thẻ div chứa kết quả
+        var resultContainer = document.getElementById("resultContainer");
+         //thẻ div chứa thông báo lỗi 
+        var errorContainer = document.getElementById("errorContainer");
+
+         //xử lý sự kiện click cho nút nhân
+        btnMultiply.onclick = function() {
+            //lấy giá trị của số A và B ra và tiến hành ép kiểu
+            var numberA = Number(txtNumberA.value);
+            var numberB = Number(txtNumberB.value);
+            resultContainer.innerHTML = numberA + " * " + numberB + " = " + (numberA * numberB);
+            errorContainer.innerHTML = "";
+        };
+
+         //xử lý sự kiện click cho nút chia
+        btnDivide.onclick = function() {
+            //lấy giá trị của số A và B ra và tiến hành ép kiểu
+            var numberA = Number(txtNumberA.value);
+            var numberB = Number(txtNumberB.value);
+            //xóa kết quả ở phép nhân chia trước
+            errorContainer.innerHTML = "";
+            resultContainer.innerHTML = "";
+            //nếu số b  = 0 thì báo lỗi.
+            if (numberB === 0) {
+                errorContainer.innerHTML = "Không thể chia cho 0";
+            } else {
+                resultContainer.innerHTML = numberA + " / " + numberB + " = " + (numberA / numberB);
+            }
+
+        };
+    </script>
+</body>
+
+</html>

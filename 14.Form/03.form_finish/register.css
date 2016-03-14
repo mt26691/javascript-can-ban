@@ -1,0 +1,30 @@
+label.textLabel {
+    width: 120px;
+    display: inline-block;
+}
+.fields {
+    width: 320px;
+    margin: 5px;
+}
+.standardTextBox {
+    width: 180px;
+}
+.standardSelect {
+    width: 184px;
+}
+.button {
+    width: 151px;
+    /*Thêm padding cho nút để nút to ra*/
+    padding: 5px;
+}
+form {
+    width: 320px;
+    /*Margin auto dùng để canh form nằm ở chính giữa*/
+    margin: auto;
+    background-color: #D6FFFF;
+    border: 1px solid black;
+}
+.error {
+    color: red;
+    margin-left: 5px;
+}

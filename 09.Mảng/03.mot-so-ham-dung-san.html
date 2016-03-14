@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h3>Join dùng để nối các phần tử trong mảng thành một chuỗi</h3>
+    <h3>Reverse dùng để đảo ngược mảng</h3>
+    <script>
+        var names = new Array();
+        names[0] = "Phần tử 1";
+        names[1] = "Phần tử 2";
+        names[2] = "Phần tử 3";
+        names[3] = "Phần tử 4";
+        names[4] = "Phần tử 5";
+        
+        //đảo ngược mảng names
+        var reversedNames = names.reverse();
+        
+        //Nối các phần tử đã đảo ngược với nhau.
+        var outputString = reversedNames.join();
+        
+        console.log(outputString);
+    </script>
+</body>
+
+</html>
